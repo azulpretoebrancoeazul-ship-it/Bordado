@@ -1,0 +1,1 @@
+ALTER TABLE `site_appearance` ADD `themeMode` enum('light','dark') DEFAULT 'light' NOT NULL;
