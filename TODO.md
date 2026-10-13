@@ -30,7 +30,7 @@
 - Somente um administrador autenticado — papel administrativo existente ou conta autorizada por configuração protegida server-side — pode trocar ou restaurar o logotipo; a leitura da imagem atual é pública.
 - O administrador pode restaurar o logotipo original a qualquer momento.
 
-## Temas e paletas do site — modo claro/escuro, mais cores e restauração [em andamento]
+## Temas e paletas do site — modo claro/escuro, mais cores e restauração [concluído]
 - O administrador pode alternar separadamente entre os modos Claro e Escuro.
 - O seletor oferece dez paletas em degradê: Ateliê, Botânica, Oceano, Lavanda, Romã, Mostarda, Esmeralda, Céu, Cacau e Framboesa.
 - A combinação de tema e paleta é aplicada à interface e salva globalmente para todos os visitantes; ao abrir o site, todos recebem a combinação ativa.
