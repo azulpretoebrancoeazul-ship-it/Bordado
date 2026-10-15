@@ -6,7 +6,7 @@ import { registerOAuthRoutes } from "./oauth";
 import { publicPlatformScript } from "./publicConfig";
 import { appRouter } from "../routers";
 import { createContext } from "./context";
-import { serveStatic, setupVite } from "./vite";
+import { serveStatic } from "./static.js";
 
 export async function createApp() {
   const app = express();
@@ -35,6 +35,7 @@ export async function createApp() {
 
   // Development mode uses Vite; production mode serves the built client.
   if (process.env.NODE_ENV === "development") {
+    const { setupVite } = await import("./vite.js");
     await setupVite(app, server);
   } else {
     serveStatic(app);
