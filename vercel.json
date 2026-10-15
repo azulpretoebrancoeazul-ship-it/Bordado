@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "buildCommand": "pnpm build",
+  "buildCommand": "pnpm exec vite build && pnpm exec esbuild server/_core/index.ts --platform=node --packages=external --bundle --external:./vite.js --format=esm --outdir=dist",
   "functions": {
     "api/index.ts": {
       "includeFiles": "dist/public/**"
